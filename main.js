@@ -25,6 +25,7 @@
 
 // initialize Data values
 let data = []
+const body = document.querySelector('body')
 const questionSet = document.getElementById('questions');
 const submitBtn = document.createElement('button');
 const displayScore = document.createElement('div');
@@ -72,11 +73,14 @@ const computeScore =  (d=[]) => {
 
 
 start.addEventListener('click',() => {
+   
+    fetchData()
     // reset counter
     countdown.innerText = 10
-    fetchData() //fetch data
 
     const s = setInterval(()=>{
+     //fetch data
+
         countdown.innerText -=1;
         let score =computeScore(data) ? computeScore(data) : 0
       
@@ -84,8 +88,12 @@ start.addEventListener('click',() => {
             alert(`Time Up! You Got ${score} Marks`)
             countdown.innerText = 0
             clearInterval(s)
+          
+
         }
     }, 1000)
+
+
     
 })
 
@@ -120,6 +128,8 @@ submitBtn.addEventListener('click', () => {
     let score = computeScore(data)
     displayScore.innerHTML = `Your score is ${score}`;
     questionSet.appendChild(displayScore);
+
+    // body.removeChild(questionSet)
 
 })
 

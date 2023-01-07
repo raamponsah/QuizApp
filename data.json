@@ -9,10 +9,10 @@
           },
           {
             "question":"How are you?",
-            "options": ["Good","Better","Excellent"],
-            "answer": "Good",
+            "options": ["Best","Better","Excellent"],
+            "answer": "Best",
             "duration": 10,
-            "mark": 4
+            "mark": 9
           }
     ]
 }
