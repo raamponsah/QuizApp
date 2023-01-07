@@ -1,4 +1,4 @@
-# QuizApp
+# Quizy Quizy
 
 ### 
 
