@@ -35,8 +35,7 @@ const countdown = document.querySelector('#countdown');
 
 countdown.innerText = 0
 
-submitBtn.innerHTML = 'Submit';
-questionSet.appendChild(submitBtn);
+
 
 const fetchData = async function (){
     try {
@@ -49,8 +48,6 @@ const fetchData = async function (){
     }
 }
 
-fetchData() //fetch data
-
 
 
 // Compute Score
@@ -61,8 +58,6 @@ const computeScore =  (d=[]) => {
         const answer = document.querySelector(`input[name="question${index}"]:checked`);
         answers.push(answer?.value);
     })
-
-    console.log(answers)
 
     const score = d.reduce((total, question, index) => {
         if(question.answer === answers[index]) {
@@ -79,6 +74,8 @@ const computeScore =  (d=[]) => {
 start.addEventListener('click',() => {
     // reset counter
     countdown.innerText = 10
+    fetchData() //fetch data
+
     const s = setInterval(()=>{
         countdown.innerText -=1;
         let score =computeScore(data) ? computeScore(data) : 0
@@ -109,6 +106,9 @@ const displayQuestionsOnScreen = (data)=>{
         `
         questionSet.appendChild(questionDiv);
     })
+
+    submitBtn.innerHTML = 'Submit';
+    questionSet.appendChild(submitBtn);
 }
 
 
@@ -122,6 +122,8 @@ submitBtn.addEventListener('click', () => {
     questionSet.appendChild(displayScore);
 
 })
+
+
 
 
 
