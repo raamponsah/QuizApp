@@ -1,18 +1,63 @@
 {
     "data":[
         {
-            "question":"How are you?",
-            "options": ["Good","Better","Excellent"],
-            "answer": "Good",
+            "question":"Question: What is always coming, but never arrives?",
+            "options": ["Now","Tomorrow","Everyday"],
+            "answer": "Tomorrow",
             "duration": 10,
             "mark": 4
           },
           {
-            "question":"How are you?",
-            "options": ["Best","Better","Excellent"],
-            "answer": "Best",
+            "question":"What can be broken, but is never held?",
+            "options": ["Egg","Friendship","Promise"],
+            "answer": "Promise",
+            "duration": 10,
+            "mark": 5
+          },
+          {
+            "question":"What is full of holes but still holds water?",
+            "options": ["Sponge","Bucket","Net"],
+            "answer": "Sponge",
+            "duration": 10,
+            "mark": 6
+          },
+          {
+            "question":"What has a head and a tail, but no body?",
+            "options": ["Coin","Pencil","Needle"],
+            "answer": "Coin",
+            "duration": 10,
+            "mark": 7
+          },
+          {
+            "question":"What has hands but can not clap?",
+            "options": ["Clock","Watch","Clock"],
+            "answer": "Clock",
+            "duration": 10,
+            "mark": 8
+          },
+          {
+            "question":"What has a neck but no head?",
+            "options": ["Bottle","Giraffe","Beer"],
+            "answer": "Bottle",
             "duration": 10,
             "mark": 9
+          },
+          {
+            "question":"What has a mouth but never eats?",
+            "options": ["Cow","River","Wind"],
+            "answer": "River",
+            "duration": 10,
+            "mark": 10
+          },
+          {
+            "question":"What has a bed but never sleeps?",
+            "options": ["Garden","River","House"],
+            "answer": "River",
+            "duration": 10,
+            "mark": 11
           }
+
+    
+          
     ]
 }

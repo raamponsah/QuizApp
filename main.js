@@ -30,11 +30,13 @@ const questionSet = document.getElementById('questions');
 const submitBtn = document.createElement('button');
 const displayScore = document.createElement('div');
 displayScore.classList.add('score');
+const END_AT = 30;
+const START_AT = 0;
 
 const start = document.querySelector('#start');
 const countdown = document.querySelector('#countdown');
 
-countdown.innerText = 0
+countdown.innerText = START_AT
 
 
 
@@ -76,7 +78,7 @@ start.addEventListener('click',() => {
    
     fetchData()
     // reset counter
-    countdown.innerText = 10
+    countdown.innerText = END_AT
 
     const s = setInterval(()=>{
      //fetch data
