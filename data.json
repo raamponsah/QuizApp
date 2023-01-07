@@ -1,0 +1,18 @@
+{
+    "data":[
+        {
+            "question":"How are you?",
+            "options": ["Good","Better","Excellent"],
+            "answer": "Good",
+            "duration": 10,
+            "mark": 4
+          },
+          {
+            "question":"How are you?",
+            "options": ["Good","Better","Excellent"],
+            "answer": "Good",
+            "duration": 10,
+            "mark": 4
+          }
+    ]
+}
